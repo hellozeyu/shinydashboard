@@ -153,7 +153,7 @@ dashboardSidebar <- function(..., disable = FALSE, width = NULL, collapsed = FAL
 #'
 #' @export
 sidebarUserPanel <- function(name, subtitle = NULL, image = NULL) {
-  div(class = "user-panel", style="background-color:transparent;"
+  div(class = "user-panel", style="background-color:transparent;",
     if (!is.null(image)) {
       div(class = "pull-left image",
         img(src = image, class = "img-circle", alt = "User Image")
